@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - Using printf instead of puts
  * Return: 0 (Success)
