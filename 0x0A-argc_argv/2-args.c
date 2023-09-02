@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
-/*
- * main - Write a program that prints all arguments it receives
+/**
+ * main - prints all arguments it receives
  * @argc: number of arguments
  * @argv: array of arguments
  *
