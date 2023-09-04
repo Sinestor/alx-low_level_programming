@@ -1,21 +1,30 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
- * _strchr - Entry point
- * @s: input
- * @c: input
- * Return: Always 0 (Success)
+ * _strcat - a function that concatenates two strings
+ * @dest: an input
+ * @src: second input
+ * Return: void
  */
-char *_strchr(char *s, char c)
+
+char *_strcat(char *dest, char *src)
 {
-	int i = 0;
+	int a;
+	int b;
 
-	for (; s[i] >= '\0'; i++)
+	a = 0;
+	while (dest[a] != '\0')
 	{
-		if (s[i] == c)
-			return (&s[i]);
+		a++;
 	}
-	return (0);
-}
+	b = 0;
+	while (src[b] != '\0')
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
+	}
 
+	dest[a] = '\0';
+	return (dest);
+}
