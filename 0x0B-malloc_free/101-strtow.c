@@ -51,7 +51,7 @@ char **strtow(char *str)
 
 	for (h = 0; h <= len; h++)
 	{
-		if (str[i] == ' ' || str[i] == '\0')
+		if (str[h] == ' ' || str[h] == '\0')
 		{
 			if (b)
 			{
